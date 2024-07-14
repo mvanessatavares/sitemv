@@ -11657,3 +11657,32 @@ pre {
 .section.bg-gray {
   background: white;
 }
+@media (max-width: 768px) {
+    .collapse {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .collapse {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+}
